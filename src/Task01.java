@@ -1,7 +1,13 @@
 public class Task01 {
     public static void main(String[] args) {
-        int a = 123;
-        System.out.println("Сумма цифр числа"+a+"равна"+(a%10)+((a/10)&10)+((a/100)%10));
+     int a = 9;
+     int b = 4;
+     int c =(a- a%b)/b;
+     int d = a%b;
+     double z = Math.sqrt(a);
+        System.out.println(c);
+        System.out.println(d);
+        System.out.println(z);
 
     }
 }
