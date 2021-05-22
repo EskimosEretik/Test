@@ -1,7 +1,5 @@
 import java.util.Scanner;
 
-import static javax.swing.text.html.HTML.Tag.S;
-
 public class Home1 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -28,6 +26,8 @@ public class Home1 {
                 break;
             case 7:
                 System.out.println("Воскресенье");
+                break;
+            default:
                 break;
         }
     }
