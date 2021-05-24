@@ -10,13 +10,19 @@ public class Home11 {
         int flat = scanner.nextInt();
         double entranceFloor = countFloor * countFlat;
         double entrance = flat / entranceFloor;
-        int num;
-        if (entrance % 1 > 0) {
-            num = (int) entrance + 1;
+
+        if (flat > 0) {
+            int num;
+
+            if (entrance % 1 > 0) {
+                num = (int) entrance + 1;
+            } else {
+                num = (int) entrance;
+            }
+            System.out.println("Квартира в " + num + " подъезде");
         } else {
-            num = (int) entrance;
+            System.out.println("Квартира " + flat + " не существует");
         }
-        System.out.println("Квартира в " + num + " подъезде");
 
 
     }
